@@ -1,4 +1,8 @@
-# DrissionPage MCP Server
+# DrissionPage MCP Server ⚠️ Under Development
+
+[English Version](README.md) | [中文版本](README_CN.md)
+
+⚠️ **This project is currently under active development and is not ready for production use.**
 
 A professional Model Context Protocol (MCP) server that provides browser automation capabilities using DrissionPage. This server enables LLMs to interact with web pages through structured automation tools, bypassing the need for screenshots or visually-tuned models.
 

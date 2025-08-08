@@ -1,11 +1,13 @@
-# DrissionPage MCP (开发中)
+# DrissionPage MCP Server ⚠️ 开发中
+
+[English Version](README.md) | [中文版本](README_CN.md)
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-基于 DrissionPage 的 MCP（模型上下文协议）工具 - 一个让 Claude 和其他 MCP 客户端能够通过 DrissionPage 控制网页浏览器的自动化服务器。
+⚠️ **该项目目前正在积极开发中，尚未准备好用于生产环境。**
 
-[English Version](README.md) | 中文版本
+基于 DrissionPage 的 MCP（模型上下文协议）工具 - 一个让 Claude 和其他 MCP 客户端能够通过 DrissionPage 控制网页浏览器的自动化服务器。
 
 ## 概述
 
