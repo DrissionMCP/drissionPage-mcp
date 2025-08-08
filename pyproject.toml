@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drissionpage-mcp"
+version = "0.1.0"
+description = "DrissionPage Tools for MCP (Model Context Protocol)"
+authors = [
+    { name = "DrissionPage MCP Team" }
+]
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.8"
+dependencies = [
+    "mcp>=1.0.0",
+    "DrissionPage>=4.0.0",
+    "pydantic>=2.0.0",
+    "typing-extensions>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+drissionpage-mcp = "src.cli:main"
+
+[project.entry-points."mcp.servers"]
+drissionpage = "src.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+exclude = ["playground*", "tests*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
